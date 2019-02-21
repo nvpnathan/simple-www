@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: lbtest
-        image: harbor.vballin.com/project1/simple-www
+        image: harbor.vballin.com/project1/simple-www:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 80
