@@ -2,7 +2,7 @@ FROM ubuntu:latest
 MAINTAINER Charles Saroka
 
 RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-get -y install \
-    apache2 php php-mysql libapache2-mod-php curl lynx-common lynx vim
+    apache2 php libapache2-mod-php curl lynx-common lynx vim
 
 RUN a2enmod php7.2
 RUN a2enmod rewrite
