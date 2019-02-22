@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-MAINTAINER Charles Saroka
+MAINTAINER Nathan
 
 RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-get -y install \
     apache2 php curl lynx-common lynx vim
